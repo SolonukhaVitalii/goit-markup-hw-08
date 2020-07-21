@@ -1,0 +1,221 @@
+.backdrop {
+    position: fixed;
+    width: 1800px;
+    height: 1024px;
+    left: 0;
+    top: 0;
+    background: $bg-backdrop;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: visible;
+}
+
+.form {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    top: 222px;
+    left: 690px;
+    background-color: $primary-white-color;
+    border-radius: $br-4;
+    box-shadow: $box-shadow-m;
+    position: $pos-r;
+}
+
+.close {
+    position: $pos-a;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    background-color: $primary-white-color;
+    border-radius: $br-close;
+    border: $border-close;
+    transform: $transform;
+    cursor: pointer;
+}
+
+.icon-close {
+    position: $pos-a;
+    top: 0;
+    left: 5px;
+    transform: $transform-close;
+}
+
+.close:focus .icon-close {
+    fill: $accent-color;
+}
+
+.form-title {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: $title-text-color;
+}
+
+.form-field {
+    margin-bottom: 28px;
+    position: $pos-r;
+}
+
+.form-label {
+    position: $pos-a;
+    top: 50%;
+    left: 42px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: $ls-1;
+    color: $primary-text-color;
+    transform: $transform-modalka;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 18px;
+    border: $border-close;
+    box-sizing: $box;
+    border-radius: $br-4;
+    cursor: pointer;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    color: $accent-color;
+    transform: $transform-mod;
+    margin-left: -30px;
+    transition-duration: $timing;
+}
+
+.form-input:placeholder-shown {
+    background-color: $primary-white-color;
+}
+
+.form-label:focus-within .form-input {
+    outline: none;
+    border-color: $accent-color;
+}
+
+.form-icon {
+    position: $pos-a;
+    top: 50%;
+    left: 16px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    transform: $transform-modalka;
+    background-color: $primary-white-color;
+}
+
+.form-input:focus ~ .form-icon {
+    fill: $accent-color;
+}
+
+.field-textarea {
+    position: $pos-r;
+    margin-bottom: 20px;
+}
+
+.form-textarea {
+    position: $pos-a;
+    top: 20%;
+    left: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: $ls-1;
+    color: $primary-text-color;
+    transform: $transform-modalka;
+    transition: transform $timing, $timing-function;
+}
+
+.comment {
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    border: $border-close;
+    box-sizing: $box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment:focus + .form-textarea,
+.comment:not(:placeholder-shown) + .form-textarea {
+    color: var(--accent-color);
+    transform: $transform-m;
+    margin-left: 0;
+    transition-duration: $timing;
+}
+
+.comment:placeholder-shown {
+    background-color: $primary-white-color;
+}
+
+.form-textarea:focus-within .comment {
+    border-color: $accent-color;
+    outline: none;
+}
+
+.textarea {
+    resize: none;
+}
+
+.label {
+    display: $dis;
+}
+
+.checkbox-box {
+    position: $pos-r;
+}
+
+.checkbox-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 8px;
+    margin-left: 25px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0 );
+    overflow: hidden;
+}
+
+.icon-box {
+    position: $pos-a;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    top: 5px;
+    left: 0;
+    border: $border-m;
+    border-radius: $br-2;
+    align-items: $cen;
+}
+
+.checkbox:checked + .icon-box {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/iconcheck.svg);
+    background-size: contain;
+    background-origin: $box;
+}
+
+.doc {
+    color: $accent-color;
+    text-decoration-line: underline;
+}
+
+.form-button {
+    margin-left: 125px;
+    margin-top: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,136 @@
+.footer {
+    color: $primary-white-color;
+    background-color: $background-color-footer;
+}
+
+.page-footer {
+    display: $dis;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: $border-bottom;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-footer {
+    display: $d-bl;
+    width: 153px;
+    margin-bottom: 20px;
+}
+
+.lis {
+    list-style: none;
+}
+
+.footer-address {
+    width: 231px;
+    color: $primary-white-color;
+    font-weight: $normal;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.footer-contact {
+    width: 231px;
+    color: $color-footer;
+    font-weight: $normal;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.inst {
+    display: $d-bl;
+    width: 206px;
+    margin-left: 69px;
+    margin-top: 72px;
+}
+
+.footer-title {
+    color: $primary-white-color;
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.insts {
+    width: 145px;
+}
+
+.list-icons {
+    margin-right: 10px;
+}
+
+.icons {
+    background: $background-footer;
+    padding-left: 12px;
+}
+
+.forms {
+    display: $dis;
+    width: 570px;
+    height: 86px;
+    margin-left: 94px;
+}
+
+.forms-mails {
+    display: $d-bl;
+}
+
+.forms-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: $border-foot;
+    box-sizing: $box;
+    box-shadow: $box-shadow-footer;
+    border-radius: $br-4;
+    background-color: $background-color-footer;
+}
+
+.mails {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.submit {
+    margin-top: 35px;
+
+}
+
+.buttons {
+    display: inline-flex;
+    border-radius: 4px;
+    padding: 10px 32px;
+    max-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+
+    color: $primary-white-color;
+    border: $border;
+    background-color: $accent-color;
+    text-align: $cen;
+    align-items: $cen;
+    cursor: pointer;
+}
+
+.icon-send {
+    fill: $primary-white-color;
+    margin-left: 10px;
+}
+
+.avtor {
+    display: $d-bl;
+    width: 310px;
+    padding-top: 18px;
+    padding-bottom: 21px;
+    margin: auto;
+    
+    
+    color: $color-foot;
+    font-size: 12px;
+    line-height: 2;
+    text-align: $cen;
+}

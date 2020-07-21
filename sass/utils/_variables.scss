@@ -1,0 +1,77 @@
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196F3;
+$primary-white-color: #ffffff;
+$link-color: #000000;
+$bg-backdrop: rgba(0, 0, 0, 0.2);
+$bg-mesedg: #F5F4FA;
+$background-color-footer: #2F303A;
+$background-footer: rgba(255, 255, 255, 0.1);
+$color-foot: rgba(255, 255, 255, 0.4);
+$color-footer: rgba(255, 255, 255, 0.6);
+$background-color-program: rgba(47, 48, 58, 0.8);
+$background-color-port: rgba(33, 150, 243, 0.9);
+$box-shadow-m: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+$box-shadow-footer: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$box-shadow-p: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
+$outline: 1px solid black;
+$border: 1px solid $accent-color;
+$border-close: 1px solid rgba(33, 33, 33, 0.2);
+$border-m: 2px solid $accent-color;
+$border-cli: 0.1px solid $accent-color;
+$border-client: 0.1px solid #AFB1B8;
+$border-footer: 1px solid rgba(168, 162, 162, 0.3);
+$border-foot: 1px solid rgba(255, 255, 255, 0.3);
+$border-bottom: 1px solid #ccc;
+$border-port: 1px solid #EEEEEE;
+
+$font-family: Roboto;
+$font-family-logo: Raleway;
+$black: 900;
+$bold: 700;
+$medium: 500;
+$normal: 400;
+
+$ls-6: 0.06em;
+$ls-3: 0.03em;
+$ls-2: 0.02em;
+$ls-1: 0.01em;
+
+$br-2: 2px;
+$br-4: 4px;
+$br-close: 50%;
+$br-5: 5%;
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$timing: 250ms;
+$transform: translateX(-10%);
+$transform-close: translateY(30%);
+$transform-modalka: translateY(-50%);
+$transform-mod: translateY(-40px);
+$transform-m: translateY(-45px);
+$transform-program: translateY(-100%);
+$transform-porfolio: translateY(100%);
+$transform-port: translateY(0);
+
+
+$dis: flex;
+$box: border-box;
+$cen: center;
+$bas: baseline;
+$d-bl: block;
+$pos-r: relative;
+$pos-a: absolute;
+
+
+
+
+
+
+
+
+
+
+
+
+

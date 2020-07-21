@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: $box;
+}
+
+body {
+    background-color: $primary-white-color;
+    color: $primary-text-color;
+    font-family: $font-family;
+    letter-spacing: $ls-3;
+}
+
+.list {
+    display: $dis;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    list-style: none;
+}
+
+.list-item {
+    box-sizing: $box;
+    margin-left: 30px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    transition: color $timing, $timing-function, fill $timing, $timing-function;
+}
+
+a:hover {
+    color: $accent-color;
+}
+
+a:hover svg {
+    fill: $accent-color;
+}
+
+a:hover .icon {
+    fill: $primary-white-color;
+}

@@ -1,0 +1,54 @@
+.container-robota {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:$cen;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-titles {
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+    font-weight: $bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: $cen;
+}
+
+.program {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+    margin-left: 0;
+    position: $pos-r;
+}  
+
+.foto-program {
+    width: 370px;
+    height: 294px;
+}
+
+.program-cod {
+    position: $pos-a;
+    top: 294px;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    background-color: $background-color-program;
+    transform: $transform-program;
+}
+
+.section-cod {
+    display: $dis;
+    margin-top: 27px;
+    margin-bottom: 27px;
+
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: $cen;
+    text-transform: uppercase;
+    justify-content: $cen;
+    align-items: $cen;
+}

@@ -1,0 +1,57 @@
+.section-hero {
+    max-width: 1600px;
+    height: 600px;
+    display: $dis;
+    margin-left: auto;
+    margin-right: auto;
+    outline: $outline;
+    background-color: $link-color;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/Header.jpg");
+    background-repeat: no-repeat;
+    background-position: $cen;
+    background-size: cover;   
+}
+
+.container-hero {
+    margin: auto;
+    max-width: 696px;
+    text-align: $cen;
+}
+
+.hero-title {
+    margin-bottom: 30px;
+    color: $primary-white-color;
+    font-weight: $black;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: $cen;
+    letter-spacing: $ls-6;
+    text-transform: uppercase;   
+}
+
+.button {
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
+
+    color: $primary-white-color;
+    border: $border;
+    border-radius: $br-4;
+    background-color: $accent-color;
+    text-align: $cen;
+}
+
+.button.primary {
+    color: $primary-white-color;
+    background: $accent-color;
+}
+
+.button.secondary {
+    color: $accent-color;
+    background-color: $primary-white-color;
+}

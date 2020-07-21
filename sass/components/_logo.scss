@@ -1,0 +1,19 @@
+.logo {
+    width: 153px;
+    margin-right: 85px;
+    margin-bottom: 25px;
+
+    color: $link-color;
+    font-family: $font-family-logo;
+    font-weight: $bold;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-blue {
+    color: $accent-color;
+}
+
+.logo-black {
+    color: $link-color;
+}

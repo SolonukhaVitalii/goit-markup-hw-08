@@ -1,0 +1,38 @@
+.container-client {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: $cen;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients {
+    display: $dis;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client {
+    width: 170px;
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+.box-icon {
+    display: $dis;
+    height: 90px;
+    border: $border-client;
+    border-radius: $br-5;
+    align-items: center;
+    padding-left: 60px;
+    transition: border $timing, $timing-function;
+}
+
+.box-icon:hover {
+    border: $border-cli;
+    border-radius: $br-5;
+}
+
+.icon-logo {
+    fill: $primary-text-color;
+}

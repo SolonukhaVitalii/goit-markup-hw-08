@@ -1,0 +1,94 @@
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
+.site-nav .link {
+    display: $d-bl;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    color: $link-color;
+    font-weight: $medium;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: $ls-2;
+    transition: color $timing, $timing-function;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: $accent-color;
+}
+
+.current {
+    position: $pos-r;
+}
+
+.current::after {
+    content: "";
+    position: $pos-a;
+    display: $d-bl;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 32px;
+    border-radius: $br-2;
+    background-color: $accent-color;
+    transition: opacity $timing, $timing-function;
+    opacity: 0;
+}
+
+.current:hover::after,
+.current:focus::after {
+    opacity: 1;
+}
+
+.link-current:after  {
+    content: "";
+    position: $pos-a;
+    display: $d-bl;
+    height: 4px;
+    left: 0;
+    top: 32px;
+    border-bottom: 2px solid $accent-color;
+    opacity: 1;
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.contact {
+    margin-right: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    color: $title-text-color;
+    font-family: $font-family;
+    font-weight: $medium;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: $ls-2;
+    font-style: normal;
+    transition: color $timing, $timing-function;
+}
+
+.contact:last-child {
+    margin-right: 0;
+}
+
+.contact:hover,
+.contact:focus {
+    color: $accent-color;
+}
+
+.icon-mail,
+.icon-tel {
+    fill: $primary-text-color;
+    margin-right: 5px;
+    vertical-align: middle;
+}

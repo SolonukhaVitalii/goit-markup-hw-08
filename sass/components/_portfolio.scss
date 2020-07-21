@@ -1,0 +1,100 @@
+.flex-container {
+    display: $dis;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.flex-element {
+    width: 370px;
+    height: 404px;
+    margin: 15px;
+    border: $border-port;
+    overflow: hidden;
+    position: $pos-r;
+}
+
+.product-foto {
+    background-color: $color-foot;
+    overflow: hidden;
+    position: $pos-r;
+}
+
+.product-foto::before {
+    display: inline-block;
+    content: "";
+    position: $pos-a;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background-color-port;
+    transform: $transform-porfolio;
+    transition: transform $timing $timing-function;
+    opacity: 0;
+}
+
+.flex-element:hover .product-foto::before {
+    transform: $transform-port;
+    opacity: 1;
+}
+
+.product-overlay {
+    position: $pos-a;
+    padding-top: 63px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: $transform-porfolio;
+    transition: transform $timing $timing-function;
+    opacity: 0;
+}
+
+.flex-element:hover .product-overlay {
+    transform: $transform-port;
+    opacity: 1;
+    box-shadow: $box-shadow-p;
+}
+
+.work-title {
+    width: 322px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-right: 24px;
+    margin-left: 24px;
+
+    color: $title-text-color;
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: $ls-6;
+    text-align: left;
+}
+
+.work-name {
+    width: 322px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 24px;
+    margin-left: 24px;
+
+    color: $primary-text-color;
+    font-weight: $normal;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: left;
+}
+
+.text {
+    width: 332px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 24px;
+    margin-left: 24px;
+
+    color: $primary-white-color;
+    font-weight: $normal;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: left;
+}
