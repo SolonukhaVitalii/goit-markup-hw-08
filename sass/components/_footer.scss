@@ -4,12 +4,25 @@
 }
 
 .page-footer {
-   
     justify-content: space-between;
     align-items: baseline;
     border-bottom: $border-bottom;
     margin-left: auto;
     margin-right: auto;
+
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        display: flex;
+    }
 }
 
 .logo-footer {
@@ -23,7 +36,6 @@
 }
 
 .footer-address {
-    width: 231px;
     color: $primary-white-color;
     font-weight: $normal;
     font-size: 14px;
@@ -32,7 +44,6 @@
 }
 
 .footer-contact {
-    width: 231px;
     color: $color-footer;
     font-weight: $normal;
     font-size: 14px;
@@ -72,6 +83,10 @@
     width: 570px;
     height: 86px;
     margin-left: 94px;
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        display: flex;
+    }
 }
 
 .forms-mails {
@@ -96,7 +111,6 @@
 
 .submit {
     margin-top: 35px;
-
 }
 
 .buttons {
@@ -132,4 +146,8 @@
     font-size: 12px;
     line-height: 2;
     text-align: $cen;
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        display: none;;
+    }
 }

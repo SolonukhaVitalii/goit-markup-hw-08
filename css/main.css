@@ -928,6 +928,27 @@ a:hover .icon {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .page-footer {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .logo-footer {
   display: block;
   width: 153px;
@@ -939,7 +960,6 @@ a:hover .icon {
 }
 
 .footer-address {
-  width: 231px;
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
@@ -948,7 +968,6 @@ a:hover .icon {
 }
 
 .footer-contact {
-  width: 231px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -988,6 +1007,15 @@ a:hover .icon {
   width: 570px;
   height: 86px;
   margin-left: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .forms {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .forms-mails {
@@ -1050,6 +1078,13 @@ a:hover .icon {
   font-size: 12px;
   line-height: 2;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .avtor {
+    width: 480px;
+    display: none;
+  }
 }
 
 .container-work {
