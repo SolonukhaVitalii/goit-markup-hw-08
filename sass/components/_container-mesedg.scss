@@ -1,19 +1,32 @@
 .container-mesedg {
-    display: $dis;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     text-align: $cen;
     justify-content: space-between;
     padding-top: 94px;
     padding-bottom: 94px;
+    
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
 
 .mesedg {
-    width: calc((100% - 30px * 3) / 4);
-    margin-right: 30px;
-    margin-left: 0;
     justify-content: $cen;
     align-items: $cen;
+    margin-right: 30px;
+    margin-left: 0;
+    width: calc((100% - 30px * 3) / 4);
 }
 
 .mesedg:last-child {
