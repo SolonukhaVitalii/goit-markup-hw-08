@@ -1,4 +1,7 @@
-.container-hero {
+.section-hero {
+    max-width: 1600px;
+    height: 600px;
+    display: $dis;
     margin-left: auto;
     margin-right: auto;
     outline: $outline;
@@ -11,25 +14,12 @@
         url("../images/Header.jpg");
     background-repeat: no-repeat;
     background-position: $cen;
-    background-size: cover;
-    
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-        height: 400px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-        height: 600px;
-    }
+    background-size: cover;   
 }
 
-.section-hero {
+.container-hero {
     margin: auto;
+    max-width: 696px;
     text-align: $cen;
 }
 

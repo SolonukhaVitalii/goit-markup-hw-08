@@ -1,13 +1,10 @@
 .backdrop {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 1800px;
+    height: 1024px;
     left: 0;
     top: 0;
     background: $bg-backdrop;
-
-    padding: 50px 30px;
-    overflow-y: scroll;
 }
 
 .is-hidden {
@@ -26,15 +23,6 @@
     border-radius: $br-4;
     box-shadow: $box-shadow-m;
     position: $pos-r;
-
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        max-width: 50%;
-    }
 }
 
 .close {
@@ -156,7 +144,7 @@
 
 .comment:focus + .form-textarea,
 .comment:not(:placeholder-shown) + .form-textarea {
-    color: var(--accent-color);
+    color: $accent-color;
     transform: $transform-m;
     margin-left: 0;
     transition-duration: $timing;

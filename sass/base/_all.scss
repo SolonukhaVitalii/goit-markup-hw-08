@@ -12,6 +12,7 @@ body {
 }
 
 .list {
+    display: $dis;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
@@ -25,11 +26,22 @@ body {
 }
 
 .container {
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
+
 
 a {
     text-decoration: none;
@@ -46,4 +58,10 @@ a:hover svg {
 
 a:hover .icon {
     fill: $primary-white-color;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+    height: auto;
 }

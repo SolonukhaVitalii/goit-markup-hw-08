@@ -1,19 +1,8 @@
 .container-header {
-    padding-left: 15px;
-    padding-right: 15px;
+    display: $dis;
+    align-items: $cen;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
-
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-        display: $dis;
-    }
+    align-items: $bas;
 }
+
