@@ -15,6 +15,19 @@
     background-repeat: no-repeat;
     background-position: $cen;
     background-size: cover;
+
+    @media screen and (min-width: $mobile) {
+        max-width: $mobile;
+        background-position: $cen;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
 }
 
 .container-hero {

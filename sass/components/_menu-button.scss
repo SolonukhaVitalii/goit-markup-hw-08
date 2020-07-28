@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-color: greenyellow;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -45,10 +44,10 @@
 }
 
 .navigation {
-    outline: 1px solid red;
+   background: $title-text-color;
 }
 
 .contacts {
-    outline: 1px solid black;
+    background: $title-text-color;
 }
 

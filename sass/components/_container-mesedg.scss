@@ -6,6 +6,18 @@
     justify-content: space-between;
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (min-width: $mobile) {
+        max-width: $mobile;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
 }
 
 .mesedg {
@@ -14,6 +26,19 @@
     margin-left: 0;
     justify-content: $cen;
     align-items: $cen;
+
+    @media screen and (min-width: $mobile) {
+        max-width: $mobile;
+        
+    }
+    
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px * 3) / 4);
+    }
+    
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
 }
 
 .mesedg:last-child {
