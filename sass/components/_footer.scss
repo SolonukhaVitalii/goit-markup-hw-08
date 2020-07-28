@@ -10,6 +10,16 @@
     border-bottom: $border-bottom;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
 
 .logo-footer {
@@ -97,7 +107,6 @@
 
 .submit {
     margin-top: 35px;
-
 }
 
 .buttons {
@@ -107,7 +116,6 @@
     max-width: 200px;
     height: 50px;
     margin-left: 12px;
-
     color: $primary-white-color;
     border: $border;
     background-color: $accent-color;
@@ -127,8 +135,6 @@
     padding-top: 18px;
     padding-bottom: 21px;
     margin: auto;
-    
-    
     color: $color-foot;
     font-size: 12px;
     line-height: 2;

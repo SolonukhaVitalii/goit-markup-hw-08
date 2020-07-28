@@ -7,15 +7,13 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    @media screen and (max-width: $tablet) {
-        max-width: $tablet;
+    @media screen and (max-width: $desktop) {
         display: none;
     }
 }
 
 .section-titles {
     margin-bottom: 50px;
-
     color: $title-text-color;
     font-weight: $bold;
     font-size: 36px;
@@ -49,7 +47,6 @@
     display: $dis;
     margin-top: 27px;
     margin-bottom: 27px;
-
     color: $primary-white-color;
     font-weight: 700;
     font-size: 14px;
