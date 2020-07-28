@@ -15,6 +15,13 @@
     margin-right: 30px;
     margin-left: 0;
     box-shadow: $box-shadow-m;
+
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 354px;  
+    }
 }
 
 .fotos:last-child {
@@ -25,31 +32,47 @@
     width: 270px;
     height: 260px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+        height: 320px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+        height: 260px;
+    }
 }
 
 .section-name {
     margin-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
-
-
     color: $title-text-color;
     font-weight: $medium;
     font-size: 16px;
     line-height: 1.19;
     text-align: $cen;
+
+    @media screen and (min-width: $mobile) {
+        width: 157px;
+        text-align: center;
+    }
 }
 
 .section-tex {
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
-
     color: $primary-text-color;
     font-weight: $normal;
     font-size: 14px;
     line-height: 1.71;
     text-align: $cen;
+
+    @media screen and (min-width: $mobile) {
+        width: 130px;
+        text-align: center;
+    }
 }
 
 .list-name {
@@ -67,6 +90,11 @@
     align-items: $cen;
     padding-top: 12px;
     transition: background-color $timing $timing-function;
+
+    @media screen and (min-width: $mobile) {
+        width: 206px;
+        text-align: center;
+    }
 }
 
 .social-link:hover {

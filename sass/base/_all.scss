@@ -18,6 +18,8 @@ body {
     padding-left: 0;
     padding-right: 0;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .list-item {
@@ -26,11 +28,19 @@ body {
 }
 
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-}
 
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
+}
 
 a {
     text-decoration: none;
