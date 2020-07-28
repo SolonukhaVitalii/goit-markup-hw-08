@@ -694,7 +694,6 @@ a:hover .icon {
 @media screen and (min-width: 480px) {
   .container-robota {
     max-width: 480px;
-    display: none;
   }
 }
 
