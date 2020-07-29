@@ -20,11 +20,29 @@
     display: none;
 }
 
+.list-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 8px;
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        flex-wrap: nowrap; 
+    }
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        flex-wrap: nowrap;
+    }
+}
+
 .work-buttons {
     width: 611px;
     margin-bottom: 34px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+
+    @media screen and (max-width: $mobile) {
+        width: 362px;
+    }
 }
 
 .list-button {
@@ -35,6 +53,7 @@
 .work-button {
     min-width: 128px;
     height: 38px;
+    margin-bottom: 15px;
 
     color: $title-text-color;
     font-weight: $medium;

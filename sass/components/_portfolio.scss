@@ -21,6 +21,17 @@
     border: $border-port;
     overflow: hidden;
     position: $pos-r;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        margin: 30px 15px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 2 * 30) / 4)
+    }
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
 
 .product-foto {

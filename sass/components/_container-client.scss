@@ -9,7 +9,8 @@
         width: $mobile;
     }
     @media screen and (min-width: $tablet) {
-        width: $tablet;
+        display: flex;
+        flex-wrap: wrap;
     }
     @media screen and (min-width: $desktop) {
         width: $desktop;
