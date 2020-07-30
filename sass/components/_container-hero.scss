@@ -17,14 +17,14 @@
     background-size: cover;
 
     @media screen and (min-width: $mobile) {
-        max-width: $mobile;
+        width: $mobile;
         background-position: $cen;
     }
     @media screen and (min-width: $tablet) {
-        max-width: $tablet;
+        width: $tablet;
     }
     @media screen and (min-width: $desktop) {
-        max-width: $desktop;
+        width: $desktop;
     }
 }
 

@@ -119,8 +119,8 @@ a:hover .icon {
 
 .logo {
   width: 153px;
+  margin-top: 15px;
   margin-right: 85px;
-  margin-bottom: 25px;
   color: #000000;
   font-family: Raleway;
   font-weight: 700;
@@ -145,7 +145,7 @@ a:hover .icon {
   border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .menu-button {
     display: none;
   }
@@ -163,7 +163,17 @@ a:hover .icon {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: auto;
+}
+
+@media screen and (min-width: 480px) {
   .menu-container {
     position: absolute;
     top: 100%;
@@ -236,7 +246,7 @@ a:hover .icon {
 }
 
 .contacts {
-  margin-left: auto;
+  margin-left: 315px;
 }
 
 .contact {
@@ -289,20 +299,20 @@ a:hover .icon {
 
 @media screen and (min-width: 480px) {
   .section-hero {
-    max-width: 480px;
+    width: 480px;
     background-position: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -351,6 +361,8 @@ a:hover .icon {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.2);
+  padding: 94px 15px;
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -360,16 +372,25 @@ a:hover .icon {
 }
 
 .form {
-  width: 528px;
-  height: 581px;
   padding: 40px;
-  top: 222px;
-  left: 690px;
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  .form {
+    max-width: 450px;
+    height: 609px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .close {
@@ -405,6 +426,7 @@ a:hover .icon {
   font-size: 20px;
   line-height: 23px;
   color: #212121;
+  text-align: center;
 }
 
 .form-field {
@@ -491,7 +513,7 @@ a:hover .icon {
 }
 
 .comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -537,8 +559,7 @@ a:hover .icon {
 .checkbox-text {
   font-size: 14px;
   line-height: 24px;
-  margin-left: 8px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .checkbox {
@@ -559,7 +580,7 @@ a:hover .icon {
   height: 15px;
   top: 5px;
   left: 0;
-  border: 2px solid #2196F3;
+  border: 1px solid black;
   border-radius: 2px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -581,8 +602,8 @@ a:hover .icon {
 }
 
 .form-button {
-  margin-left: 125px;
-  margin-top: 30px;
+  margin-left: 100px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -602,19 +623,19 @@ a:hover .icon {
 
 @media screen and (min-width: 480px) {
   .container-mesedg {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-mesedg {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-mesedg {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -734,8 +755,9 @@ a:hover .icon {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .container-comanda {
+    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -756,20 +778,27 @@ a:hover .icon {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (min-width: 480px) {
+  .fotos {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .fotos {
-    width: calc((100% - 2 * 15px) / 3);
-    margin: 15px;
-  }
-  .fotos .fotos:not(:last-child) {
-    margin-bottom: 15px;
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .fotos {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fotos:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

@@ -5,7 +5,8 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
         display: flex;
         flex-wrap: wrap;
     }
@@ -21,15 +22,20 @@
     margin-left: 0;
     box-shadow: $box-shadow-m;
 
-    @media screen and (min-width: $tablet) {
-       width: calc((100% - 2 * 15px) / 3);
-       margin: 15px;
-       .fotos:not(:last-child) {
-        margin-bottom: 15px;
+    @media screen and (min-width: $mobile) {
+       width: 450px;
     }
+    @media screen and (min-width: $tablet) {
+        width: 354px;
     }
     @media screen and (min-width: $desktop) {
-        flex-basis: 25%;
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fotos:not(:last-child) {
+        margin-bottom: 30px;
     }
 }
 

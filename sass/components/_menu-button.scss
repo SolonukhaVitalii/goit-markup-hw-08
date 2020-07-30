@@ -4,7 +4,7 @@
     padding: 0;
     border: none;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $mobile) {
         display: none;
     }
 }
@@ -22,16 +22,18 @@
 }
 
 .menu-container {
+    display: $dis;
+    align-items: $bas;
+    margin: auto;
    
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $mobile) {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 20px;
     text-align: center;
-    }
-    
+    }  
 }
 
 
