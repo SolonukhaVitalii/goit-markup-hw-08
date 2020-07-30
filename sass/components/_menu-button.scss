@@ -4,7 +4,7 @@
     padding: 0;
     border: none;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
         display: none;
     }
 }
@@ -14,7 +14,7 @@
 }
 
 .menu-button.is-open .icon-close {
-    display: block;
+    display: $d-bl;
 }
 
 .menu-button.is-open .icon-menu {
@@ -22,18 +22,43 @@
 }
 
 .menu-container {
-    display: $dis;
-    align-items: $bas;
-    margin: auto;
-   
-    @media screen and (min-width: $mobile) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
     padding: 20px;
-    text-align: center;
-    }  
+    text-align: $cen;
+    font-size: 20px;
+    background-color: $primary-text-color;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: $pos-a;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        &.is-open {
+            display: $d-bl;
+        }
+    }
+    @media screen and (min-width: $tablet) {
+        display: $dis;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+}
+
+.navigation {
+    @media screen and (max-width: 767px) {
+        display: $d-bl; 
+    }
+}
+
+.contacts {
+    margin-top: 20px;
+    margin-left: 172px;
+
+    @media screen and (max-width: 767px) {
+        display: $d-bl;
+        margin: 0;
+    }
 }
 
 

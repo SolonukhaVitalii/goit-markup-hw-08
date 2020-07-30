@@ -97,6 +97,9 @@ a:hover .icon {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -127,7 +130,7 @@ a:hover .icon {
   border: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -146,28 +149,65 @@ a:hover .icon {
 }
 
 .menu-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #757575;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .menu-container {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 20px;
-    text-align: center;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: block;
+  }
+}
+
+.contacts {
+  margin-top: 20px;
+  margin-left: 172px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: block;
+    margin: 0;
   }
 }
 
 .site-nav .item {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav .item {
+    margin-right: 0;
+  }
 }
 
 .site-nav .item:last-child {
@@ -227,8 +267,10 @@ a:hover .icon {
   opacity: 1;
 }
 
-.contacts {
-  margin-left: 315px;
+@media screen and (max-width: 768px) {
+  .link-current:after {
+    display: none;
+  }
 }
 
 .contact {
@@ -369,9 +411,9 @@ a:hover .icon {
     width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    left: 14%;
+    -webkit-transform: translate(-50%, -14%);
+            transform: translate(-50%, -14%);
   }
 }
 
@@ -693,6 +735,24 @@ a:hover .icon {
   text-align: center;
 }
 
+@media screen and (min-width: 480px) {
+  .section-titles {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-titles {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-titles {
+    width: 1200px;
+  }
+}
+
 .program {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
@@ -761,9 +821,6 @@ a:hover .icon {
   .fotos {
     width: 450px;
     margin: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
