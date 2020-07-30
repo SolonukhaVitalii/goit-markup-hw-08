@@ -4,44 +4,32 @@
     text-align: $cen;
     padding-top: 93px;
     padding-bottom: 94px;
-
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
 }
 
 .wors {
     display: none;
 }
 
-.list-work {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 15px 8px;
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-        flex-wrap: nowrap; 
-    }
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-        flex-wrap: nowrap;
-    }
-}
-
 .work-buttons {
     width: 611px;
     margin-bottom: 34px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 
     @media screen and (max-width: $mobile) {
+        width: auto;
+    }
+}
+
+.list-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 8px;
+
+    @media screen and (min-width: $mobile) {
         width: 362px;
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
     }
 }
 

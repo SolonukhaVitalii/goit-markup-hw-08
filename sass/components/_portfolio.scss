@@ -1,17 +1,7 @@
 .flex-container {
     display: $dis;
-    flex-wrap: wrap;
     margin: -15px;
-
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
+    flex-wrap: wrap;
 }
 
 .flex-element {
@@ -22,15 +12,14 @@
     overflow: hidden;
     position: $pos-r;
 
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-        margin: 30px 15px;
+    @media screen and (max-width: $mobile) {
+        width: 450px;
+        margin: 15px;
+        align-items: center;
     }
-    @media screen and (min-width: $tablet) {
-        width: calc((100% - 2 * 30) / 4)
-    }
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
+    @media screen and (max-width: $tablet) {
+        width: 354;
+        margin: 15px;
     }
 }
 

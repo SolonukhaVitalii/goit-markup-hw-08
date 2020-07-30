@@ -6,24 +6,29 @@
     justify-content: space-between;
     padding-top: 94px;
     padding-bottom: 94px;
+}
 
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
+.list-mesedg {
+    flex-wrap: wrap;
 }
 
 .mesedg {
-    width: calc((100% - 30px * 3) / 4);
     margin-right: 30px;
     margin-left: 0;
     justify-content: $cen;
     align-items: $cen;
+
+    @media screen and (max-width: $mobile) {
+        width: 450px;
+        margin: 15px;
+    }
+    @media screen and (max-width: $tablet) {
+        width: 354px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 30px * 3) / 4);
+    }
 }
 
 .mesedg:last-child {
@@ -37,6 +42,7 @@
     border-radius: $br-4;
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .section-title {

@@ -10,15 +10,14 @@
     border-bottom: $border-bottom;
     margin-left: auto;
     margin-right: auto;
+    flex-wrap: wrap;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: $mobile) {
         width: $mobile;
-    }
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
     }
     @media screen and (min-width: $desktop) {
         width: $desktop;
+        flex-wrap: nowrap;
     }
 }
 
@@ -67,6 +66,10 @@
 
 .insts {
     width: 145px;
+
+    @media screen and (max-width: $mobile) {
+        align-items: center;
+    }
 }
 
 .list-icons {
@@ -83,6 +86,12 @@
     width: 570px;
     height: 86px;
     margin-left: 94px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        flex-wrap: nowrap;
+    }
 }
 
 .forms-mails {
@@ -103,6 +112,10 @@
 .mails {
     margin-bottom: 20px;
     padding-left: 0;
+
+    @media screen and (max-width: $mobile) {
+        align-items: center;
+    }
 }
 
 .submit {

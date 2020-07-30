@@ -4,38 +4,29 @@
     text-align: $cen;
     padding-top: 94px;
     padding-bottom: 94px;
-
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 .list-comanda {
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .fotos {
-    width: calc((100% - 30px * 3) / 4);
     margin-right: 30px;
     margin-left: 0;
     box-shadow: $box-shadow-m;
 
-    @media screen and (min-width: $mobile) {
-       width: 450px;
+    @media screen and (max-width: $mobile) {
+        width: 450px;
+        margin: 15px;
+        align-items: center;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: $tablet) {
         width: 354px;
+        margin-bottom: 15px;
     }
     @media screen and (min-width: $desktop) {
-        width: 270px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .fotos:not(:last-child) {
-        margin-bottom: 30px;
+        width: calc((100% - 30px * 3) / 4);
     }
 }
 
