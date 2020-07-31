@@ -22,17 +22,19 @@
 }
 
 .menu-container {
-    padding: 20px;
+    padding: 2px;
     text-align: $cen;
     font-size: 20px;
-    background-color: $primary-text-color;
+    
     
     @media screen and (max-width: 767px) {
         display: none;
         position: $pos-a;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 480px;
+        height: 453px;
+        background-color: $primary-white-color;
 
         &.is-open {
             display: $d-bl;
@@ -47,20 +49,26 @@
 
 .navigation {
     @media screen and (max-width: 767px) {
-        display: $d-bl; 
+        display: $d-bl;
+        margin-top: 120px;
+        margin-bottom: 60px;
     }
 }
 
 .contacts {
-    margin-top: 20px;
-    margin-left: 172px;
-
     @media screen and (max-width: 767px) {
+        margin-left: 0;
+        flex-wrap: wrap;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    @media screen and (min-width: $tablet) {
         display: $d-bl;
-        margin: 0;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: 20px;
+        margin-left: 300px;
     }
 }
-
-
-
-
