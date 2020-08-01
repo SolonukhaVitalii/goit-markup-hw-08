@@ -84,19 +84,26 @@
     font-style: normal;
     transition: color $timing, $timing-function;
 
-    @media screen and (max-width: 767px) {
-        display: $d-bl;
+    @media screen and (max-width: 480px) {
+        display: block;
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 16px;  
     }
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 10px;
-        display: $d-bl; 
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    @media screen and (max-width: 1199px) {
+        margin-right: 0;
+        margin-left: 60px;
     }
 }
 
 .contact:last-child {
     margin-right: 0;
+
+    @media screen and (max-width: 767px) {
+        margin: 0;  
+    }
 }
 
 .contact:hover,
