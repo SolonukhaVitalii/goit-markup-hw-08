@@ -90,8 +90,8 @@
         margin-bottom: 16px;
     }
     @media screen and (min-width: $tablet) {
-        margin-left: 0;
         margin-bottom: 10px;
+        display: $d-bl; 
     }
 }
 

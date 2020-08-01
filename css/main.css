@@ -102,6 +102,13 @@ a:hover .icon {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .container-nav {
+    width: 480px;
+    height: 60px;
+  }
+}
+
 .logo {
   width: 153px;
   margin-top: 15px;
@@ -111,6 +118,9 @@ a:hover .icon {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .logo-blue {
@@ -149,7 +159,6 @@ a:hover .icon {
 }
 
 .menu-container {
-  padding: 2px;
   text-align: center;
   font-size: 20px;
 }
@@ -161,7 +170,6 @@ a:hover .icon {
     top: 100%;
     left: 0;
     width: 480px;
-    height: 453px;
     background-color: #ffffff;
   }
   .menu-container.is-open {
@@ -193,25 +201,16 @@ a:hover .icon {
 
 @media screen and (max-width: 767px) {
   .contacts {
-    margin-left: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     font-size: 18px;
     line-height: 21px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contacts {
-    display: block;
-    margin-top: 10px;
-    margin-left: 100px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .contacts {
-    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 300px;
   }
 }
@@ -321,8 +320,8 @@ a:hover .icon {
 
 @media screen and (min-width: 768px) {
   .contact {
-    margin-left: 0;
     margin-bottom: 10px;
+    display: block;
   }
 }
 

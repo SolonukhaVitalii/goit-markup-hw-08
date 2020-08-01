@@ -22,7 +22,6 @@
 }
 
 .menu-container {
-    padding: 2px;
     text-align: $cen;
     font-size: 20px;
     
@@ -33,7 +32,7 @@
         top: 100%;
         left: 0;
         width: 480px;
-        height: 453px;
+        
         background-color: $primary-white-color;
 
         &.is-open {
@@ -57,18 +56,14 @@
 
 .contacts {
     @media screen and (max-width: 767px) {
-        margin-left: 0;
-        flex-wrap: wrap;
         font-size: 18px;
         line-height: 21px;
     }
     @media screen and (min-width: $tablet) {
-        display: $d-bl;
-        margin-top: 10px;
-        margin-left: 100px;
+        
     }
     @media screen and (min-width: $desktop) {
-        margin-top: 20px;
+        display: $dis;
         margin-left: 300px;
     }
 }
